@@ -1,0 +1,441 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.clearfix{
+  content: '';
+  dispay: table;
+  clear: both;
+}
+
+.container{
+  width: 1100px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ------------------------------
+Blocco Search Fixed Navbar
+------------------------------ */
+
+.search{
+  background-color: #f5f8fa;
+  position: sticky;
+  top: 0;
+  z-index: 3
+}
+
+.searchbar{
+  height: 80px;
+  padding: 30px;
+
+}
+
+.searchbar-left > *{
+  float: left;
+  height: 100%;
+  min-width: 20px;
+  margin-right: 20px;
+  line-height: 20px;
+}
+
+.searchbar-left{
+  float: left;
+  height: 20px;
+}
+
+.searchbar-right{
+  float: right;
+  height: 20px;
+  position: relative;
+}
+
+.searchbar-image{
+  height: 20px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.searchbar-image > img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#language{
+  margin-right: 50px;
+  padding-right: 50px;
+  border-right: 1px solid #e0e6ed;
+  font-size: 14px;
+  color: #33475A
+}
+
+#sales{
+  font-size: 14px;
+  color: #33475A
+}
+
+#buttonone{
+  width: 70px;
+  height: 35px;
+  color: #ff7a59;
+  background-color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-400%, -50%);
+  border: 1px solid #ff7a59;
+}
+
+#buttontwo{
+  width: 130px;
+  height: 35px;
+  color: #fff;
+  background-color: #ff7a59;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-135%, -50%);
+}
+
+
+
+/* ------------------------------
+Blocco Navbar
+------------------------------ */
+
+nav{
+  background-color: #fff;
+  /* border: 1px solid red; */
+  /* position: sticky;
+  top: 0; */
+}
+
+.navbar{
+  height: 80px;
+  padding: 10px;
+}
+
+.navbar-left{
+  float: left;
+  height: 100%;
+}
+
+.navbar-right{
+  float: right;
+  height: 100%;
+}
+
+
+.navbar-item{
+  line-height: 60px;
+  height: 60px;
+  width: 100px;
+  /* border: 1px solid red; */
+  margin: 0 20px;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.navbar-image{
+  height: 100%;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.navbar-left > *{    /* da rivedere perche gia inserito il float left */
+  float: left;
+}
+
+.navbar-image > img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 200px; */
+}
+
+
+/* ------------------------------
+Blocco Cover
+------------------------------ */
+
+.back-cover{
+  background-color: #0d325a;
+  color: #ffffff;
+}
+
+
+
+.cover{
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.cover-item{
+  width: 40%;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.cover-item h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.cover-item p{
+  font-size: 14px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+button{
+  width: 220px;
+  height: 70px;
+  color: #33475A;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* ------------------------------
+Blocco Promo - > chiedere se è corretto il tag senza ">"
+------------------------------ */
+.back-promo{
+  background-color: #f5f8fa;
+  /* border: 1px solid red; */
+  padding: 50px 0;
+}
+
+.container-image{
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid blue; */
+  position: relative;
+  /* padding: 20px; */
+}
+
+
+.cont-img{
+  width: 260px;
+  /* text-align: center; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 1px solid red; */
+  /* margin-top: 50px; */
+}
+
+.promotion > *{
+  text-align: center;
+  color: #33475A;
+}
+
+#news{
+  margin-bottom: : 50px;
+}
+
+.back-promo h1{
+  margin-bottom: 20px;
+}
+
+.back-promo h2{
+  margin-bottom: 20px;
+}
+
+.back-promo p{
+  margin-bottom: 20px;
+}
+
+/* ------------------------------
+Blocco Product
+------------------------------ */
+
+.product{
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 11px #eaf0f6;
+  color: #33475A;
+  position: relative;
+  /* border: 2px solid black; */
+}
+
+.halfone{
+  float: left;
+  width: 40%;
+  position: relative;
+}
+
+.halftwo{
+  float: left;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+}
+
+.product-img{
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+}
+
+
+.button-promo{
+  background-color: #ff7a59;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+/* ------------------------------
+Blocco Marketing
+------------------------------ */
+
+.marketing{
+  width: 100%;
+  height: 600px;
+
+}
+
+.marketing > .marketing-left, .marketing > .marketing-central, .marketing > .marketing-right{
+  float: left;
+  width: 32%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 11px #eaf0f6;
+  color: #33475A;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.marketing-central{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+.marketing h2{
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.marketing p{
+  padding: 0 25px;
+}
+
+.mtop{
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 13px;
+  margin: 15px 0;
+  border-top: 1px solid #e0e6ed;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+/* ------------------------------
+Blocco Cover Learn
+------------------------------ */
+.back-cover-learn{
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: #ffffff;
+  padding: 130px 20px;
+}
+
+.learn{
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.learn-item{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.learn-item h1{
+  font-size: 43px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.learn-item p{
+  font-size: 20px;
+  padding: 20px 30px;
+  margin: 20px 50px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* ------------------------------
+Blocco
+------------------------------ */
+
+
+/* ------------------------------
+Blocco
+------------------------------ */
+
+
+/* ------------------------------
+Blocco
+------------------------------ */
+
+
+/* ------------------------------
+Clearfix
+------------------------------ */
+/* .clearfix{
+  content: '';
+  dispay: table;
+  clear: both;
+} */
+
+
+
+
+
+/* ------------------------------
+Blocco appunti
+------------------------------ */
+/* border: 1px solid red; */
