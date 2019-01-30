@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .clearfix{
@@ -71,6 +72,10 @@ Blocco Search Fixed Navbar
   border-right: 1px solid #e0e6ed;
   font-size: 14px;
   color: #33475A
+  /* border: none;
+  margin: 0 20px;
+  background: transparent;
+  cursor: pointer; */
 }
 
 #sales{
@@ -170,10 +175,10 @@ Blocco Cover
 ------------------------------ */
 
 .back-cover{
-  background-color: #0d325a;
+  background-image: linear-gradient(to bottom left, #3ad1e9, #21708d);
   color: #ffffff;
+  border-bottom: 3px solid black;
 }
-
 
 
 .cover{
@@ -195,7 +200,7 @@ Blocco Cover
 }
 
 .cover-item p{
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px 0;
   margin: 20px 0;
 }
@@ -214,16 +219,13 @@ Blocco Promo - > chiedere se è corretto il tag senza ">"
 ------------------------------ */
 .back-promo{
   background-color: #f5f8fa;
-  /* border: 1px solid red; */
   padding: 50px 0;
 }
 
 .container-image{
   width: 100%;
   height: 200px;
-  /* border: 1px solid blue; */
   position: relative;
-  /* padding: 20px; */
 }
 
 
@@ -253,7 +255,7 @@ Blocco Promo - > chiedere se è corretto il tag senza ">"
 }
 
 .back-promo p{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ------------------------------
@@ -269,7 +271,14 @@ Blocco Product
   box-shadow: 0 0 11px #eaf0f6;
   color: #33475A;
   position: relative;
+  transition: 0.4s;
 }
+
+.product:hover{
+transform: scale(1.05);
+box-shadow: darkgrey;
+}
+
 
 .halfone{
   float: left;
@@ -313,7 +322,6 @@ Blocco Marketing
 .marketing{
   width: 100%;
   height: 600px;
-
 }
 
 .marketing > .marketing-left, .marketing > .marketing-central, .marketing > .marketing-right{
@@ -322,10 +330,25 @@ Blocco Marketing
   height: 100%;
   background-color: #fff;
   border-radius: 4px;
-  transition: 0.3s ease-in-out;
   box-shadow: 0 0 11px #eaf0f6;
   color: #33475A;
   position: relative;
+  transition: 0.4s;
+}
+
+.marketing-left:hover{
+  transform: scale(1.05);
+  box-shadow: darkgrey;
+}
+
+.marketing-central:hover{
+  transform: scale(1.05);
+  box-shadow: darkgrey;
+}
+
+.marketing-right:hover{
+  transform: scale(1.05);
+  box-shadow: darkgrey;
 }
 
 .marketing-central{
@@ -344,16 +367,19 @@ Blocco Marketing
 }
 
 .mtop{
-  width: 80%;
   height: 50px;
   line-height: 50px;
   text-align: center;
-  font-size: 13px;
-  margin: 15px 0;
-  border-top: 1px solid #e0e6ed;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+.fa-check-circle{
+  color: #ff7a59;
+  margin-right: 10px;
+}
+
+
+.elenco{
+  padding: 0 25px;
 }
 
 
@@ -441,7 +467,7 @@ Blocco Griglia
 Blocco information Top
 ------------------------------ */
 
-.product-top{
+/* .product-top{
   width: 100%;
   height: 300px;
   border-radius: 4px;
@@ -483,12 +509,62 @@ Blocco information Top
   left: 50%;
   transform: translateX(-50%);
   margin-top: 20px;
-}
+} */
 
 
 /* ------------------------------
 Blocchi da completare
 ------------------------------ */
+
+.partners:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.partners{
+  padding: 120px 0;
+  width: 100%;
+}
+
+.partners-wrapper{
+  width: 100%;
+  padding: 0 50px;
+  background: blue;
+}
+
+.partners-left, .partners-right {
+  float: left;
+  height: 100%;
+}
+
+.partners-left{
+  width: 40%;
+}
+
+.partners-right{
+  width: 60%;
+}
+
+.partners-left strong{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.partners-left p{
+  margin-top: 20px;
+}
+
+.partners-right img{
+  display: block;
+  float: left;
+  margin: 20px;
+  width: calc((100% / 4) - 40px)
+  height: auto;
+}
+
+
+
 
 
 
@@ -512,9 +588,141 @@ Blocco footer
 ------------------------------ */
 
 
+.prefooter {
+    padding: 100px 0;
+    width: 100%;
+}
+.prefooter:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.prefooter-left, .prefooter-right {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.prefooter-left h3 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.prefooter p {
+    margin-bottom: 40px;
+}
+.prefooter small {
+    display: block;
+    margin-top: 40px;
+}
+.prefooter-right-image-wrapper {
+    float: right;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: #F2547B;
+}
+.prefooter-right-image-wrapper img {
+    width: 100%;
+}
+.bottom-icon {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    background: rgb(66, 91, 118);
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.bottom-icon i {
+    vertical-align: middle;
+    color: white;
+    font-size: 35px;
+}
+footer {
+    padding: 100px 0 50px;
+    width: 100%;
+}
+.footer-head {
+    width: 100%;
+    height: auto;
+}
+.footer-head:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer-head > div {
+    float: left;
+    width: calc(100% / 4);
+    height: auto;
+    color: white;
+}
+.footer-head > div ul {
+    list-style: none;
+}
+.footer-head > div li {
+    margin-bottom: 20px;
+}
+.footer-head > div h4 {
+    margin-bottom: 10px;
+}
+.footer-head > div a {
+    color: #cbd6e2;
+    text-decoration: none;
+}
+.footer-head > div a.btn {
+    color: #33475b;
+}
+.footer-head > div a i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.footer-languages {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    border-bottom: 1px solid #cbd6e2;
+    padding-bottom: 50px;
+}
+.footer-languages a {
+    color: #cbd6e2;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.footer-bottom {
+    width: 100%;
+    margin-top: 50px;
+    height: 50px;
+}
+.footer-bottom-left, .footer-bottom-right {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.footer-bottom-left img {
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-bottom-left small {
+    color: #cbd6e2;
+}
+.footer-bottom-right {
+    text-align: right;
+}
+.footer-bottom-right a {
+    color: #cbd6e2;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+}
 
 
-
+.bg-dark-blue {
+    background: #2D3E50;
+}
 
 
 
